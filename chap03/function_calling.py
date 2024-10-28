@@ -16,7 +16,7 @@ def get_current_weather(location, unit="celsius"):
 
 
 if __name__ == '__main__':
-    config = dotenv_values(".env")
+    config = dotenv_values("../.env")
     client = OpenAI(api_key=config["OPENAI_API_KEY"])
 
     functions = [

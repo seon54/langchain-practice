@@ -2,7 +2,7 @@ from dotenv import dotenv_values
 from openai import OpenAI
 
 if __name__ == '__main__':
-    config = dotenv_values(".env")
+    config = dotenv_values("../.env")
     client = OpenAI(api_key=config["OPENAI_API_KEY"])
 
     response = client.chat.completions.create(
